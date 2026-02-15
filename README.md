@@ -3,6 +3,7 @@
 # GO Transit GTFS Wrapper
 ![License](https://img.shields.io/github/license/kenrickzhang/GO-Transit-API-Python-Wrapper)
 ![Issues](https://img.shields.io/github/issues/kenrickzhang/GO-Transit-API-Python-Wrapper)
+![PyPI](https://img.shields.io/pypi/v/gotransit)
 
 The GO Transit GTFS wrapper for Python simplifies access to the [GO Transit / Metrolinx Open Data API](https://api.openmetrolinx.com/OpenDataAPI).
 </div>
