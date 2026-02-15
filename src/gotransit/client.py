@@ -1,11 +1,10 @@
 import requests
-from .config import GO_TRANSIT_API_KEY
 from .exceptions import APIError
 
 class Client:
     BASE_URL = "https://api.openmetrolinx.com/OpenDataAPI"
 
-    def __init__(self, api_key: str = GO_TRANSIT_API_KEY):
+    def __init__(self, api_key: str = None):
         self.api_key = api_key
         self.session = requests.Session()
         self.session.headers.update({
@@ -18,7 +17,10 @@ class Client:
             params = {}
         params["key"] = self.api_key
         url = f"{self.BASE_URL}/{endpoint}"
+        
         response = self.session.get(url, params=params)
+        
         if response.ok:
             return response.json()
+
         raise APIError(response)

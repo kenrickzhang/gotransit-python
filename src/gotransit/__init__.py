@@ -10,5 +10,3 @@ __all__ = [
     "Client", "Stop", "UPGTFS", "ServiceUpdate",
     "ServiceAtAGlance", "Schedule", "Fares"
 ]
-
-__version__ = "1.0.0"
